@@ -1,13 +1,11 @@
 ---
 Name: silverstripe-localdate
-After: 'framework/*','cms/*'
+After: 'framework/*'
 ---
-Injector:
-  Date:
-    class: LocalDate
-Injector:
-  SS_Datetime:
-    class: LocalDatetime
-Injector:
-  Time:
-    class: LocalTime
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\ORM\FieldType\DBDate:
+    class: LocalDate\LocalDate;
+  SilverStripe\ORM\FieldType\DBDatetime:
+    class: LocalDate\LocalDatetime;
+  SilverStripe\ORM\FieldType\DBTime:
+    class: LocalDate\LocalTime;

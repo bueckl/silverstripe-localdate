@@ -2,7 +2,11 @@
 /**
  * Localized date names, extension of {@link Time}
  */
-class LocalTime extends Time {
+namespace LocalDate;
+
+use SilverStripe\ORM\FieldType\DBTime;
+
+class LocalTime extends DBTime {
 
 	public function Nice() {
 		if($this->value) return $this->Format(_t('LocalTimeFormat.Nice','g:ia'));
@@ -15,7 +19,7 @@ class LocalTime extends Time {
 	public function Short() {
 		if($this->value) return $this->Format(_t('LocalTimeFormat.Short','H:i'));
 	}
-	
+
 	/**
 	 * Return the date using a particular formatting string.
 	 *

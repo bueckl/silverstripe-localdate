@@ -2,7 +2,11 @@
 /**
  * Localized date names, extension of {@link Date}
  */
-class LocalDate extends Date {
+namespace LocalDate;
+
+use SilverStripe\ORM\FieldType\DBDate;
+
+class LocalDate extends DBDate {
 
 	public function Nice() {
 		if($this->value) return $this->Format(_t('LocalDateFormat.Nice','d/m/Y'));

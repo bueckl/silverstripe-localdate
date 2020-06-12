@@ -2,6 +2,8 @@
 /**
  * Localized date names helper
  */
+namespace LocalDate;
+
 class LocalDateHelper {
 
 	/**
