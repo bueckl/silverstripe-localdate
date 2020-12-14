@@ -16,7 +16,6 @@ hr:
     February: Veljača
     March: Ožujak
     April: Travanj
-    May: Svibanj
     June: Lipanj
     July: Srpanj
     August: Kolovoz
@@ -42,10 +41,10 @@ hr:
     pm: pm
     AM: AM
     PM: PM
-    st: 
-    nd: 
-    rd: 
-    th: 
+    st:
+    nd:
+    rd:
+    th:
   LocalDateFormat:
     Nice: 'd.m.Y.'
     Long: 'j. F Y.'
